@@ -196,7 +196,10 @@ BOARD_USES_QC_TIME_SERVICES := true
 TARGET_HW_DISK_ENCRYPTION := false
 
 # CM Hardware
-BOARD_HARDWARE_CLASS := device/htc/hima-common/cmhw
+BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS += \
+    $(LOCAL_PATH)/cmhw \
+    hardware/cyanogen/cmhw
 
 # inherit from the proprietary version
 -include vendor/htc/hima-common/BoardConfigVendor.mk
