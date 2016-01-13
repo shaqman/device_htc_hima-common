@@ -99,3 +99,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# Dex2oat
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.dex2oat-swap=false
