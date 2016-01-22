@@ -100,7 +100,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.dex2oat-swap=false
-
-# Enable Lazy Dexopt on boot
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.lazy.dexopt=true
