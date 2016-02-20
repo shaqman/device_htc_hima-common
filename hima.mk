@@ -91,10 +91,6 @@ PRODUCT_PACKAGES += \
     libcamera_shim \
     Snap
 
-# Compat symbols
-PRODUCT_PACKAGES += \
-    libstlport
-
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8994 \
