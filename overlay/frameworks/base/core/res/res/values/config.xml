@@ -162,6 +162,7 @@
         <item>@string/reboot_bootloader</item>
         <item>@string/reboot_recovery</item>
         <item>@string/reboot_download</item>
+        <item>@string/reboot_systemui</item>
     </array>
 
     <!-- Do not translate. Defines the shutdown actions passed to the kernel.
@@ -172,6 +173,7 @@
         <item>bootloader</item>
         <item>recovery</item>
         <item>download</item>
+        <item>systemui_reboot</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
