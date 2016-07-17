@@ -354,4 +354,7 @@
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>        
 
+    <!-- Whether device supports lockscreen rotation -->
+    <bool name="config_enableLockScreenRotation">true</bool>
+
 </resources>
