@@ -82,6 +82,9 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
 BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # CM Hardware
 BOARD_HARDWARE_CLASS := $(COMMON_PATH)/cmhw
 
