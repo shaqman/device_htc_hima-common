@@ -91,10 +91,8 @@ extern "C" void* _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8
 }
 
 // status_t setLayer(int32_t layer);
-/* needed for N-libs
 extern "C" status_t _ZN7android14SurfaceControl8setLayerEi(int32_t layer);
 
 extern "C" status_t _ZN7android14SurfaceControl8setLayerEj(uint32_t layer) {
   return _ZN7android14SurfaceControl8setLayerEi(layer);
 }
-*/
