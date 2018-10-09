@@ -1,0 +1,1 @@
+allow snap_app sysfs_graphics:file r_file_perms;

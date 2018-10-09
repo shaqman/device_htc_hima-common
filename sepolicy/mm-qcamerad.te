@@ -23,3 +23,4 @@ allow mm-qcamera-daemon camera_data_file:file {read open getattr write create};
 allow mm-qcamera-daemon camera_socket:sock_file {unlink};
 allow mm-qcamera-daemon sysfs_graphics:file {read open getattr};
 allow mm-qcamera-daemon sysfs_graphics:dir {read open search};
+allow mm-qcamera-daemon snap_app:fd {use};
