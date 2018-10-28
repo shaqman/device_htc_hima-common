@@ -96,6 +96,9 @@ on property:sys.boot_completed=1
 
     # enable LPM
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
+    
+    # Schedule workqueues on awake CPUs to save power.
+    write /sys/module/workqueue/parameters/power_efficient 1
 
     # change GPU initial power level from 305MHz(level 4) to 180MHz(level 5) for power savings
     write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 5
