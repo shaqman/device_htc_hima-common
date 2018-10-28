@@ -19,7 +19,7 @@ on boot
 on property:sys.boot_completed=1
     setprop sys.io.scheduler "bfq"
    # Set perfd properties
-    setprop ro.qualcomm.perf.cores_online 2
+    setprop ro.qualcomm.perf.cores_online 4
 
     # Disable retention on HTC
     write /sys/module/lpm_levels/system/a53/cpu0/retention/idle_enabled 0
@@ -66,7 +66,7 @@ on property:sys.boot_completed=1
 
     # online CPU4
     write /sys/devices/system/cpu/cpu4/online 1
-    write /sys/devices/system/cpu/cpu4/core_ctl/max_cpus 1
+    write /sys/devices/system/cpu/cpu4/core_ctl/max_cpus 4
 
     # configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor "interactive"
@@ -123,7 +123,7 @@ on property:sys.boot_completed=1
     chown system:system /sys/devices/system/cpu/cpu0/core_ctl/max_cpus
     #
     write /sys/devices/system/cpu/cpu4/core_ctl/max_cpus 4
-    write /sys/devices/system/cpu/cpu4/core_ctl/min_cpus 0
+    write /sys/devices/system/cpu/cpu4/core_ctl/min_cpus 4
     write /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres 72
     write /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres 28
     write /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms 100
